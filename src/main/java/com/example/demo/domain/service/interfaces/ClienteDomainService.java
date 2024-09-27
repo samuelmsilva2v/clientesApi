@@ -10,7 +10,7 @@ public interface ClienteDomainService {
 
 	public ClienteResponseDto inserir(ClienteRequestDto request) throws Exception;
 	
-	public ClienteResponseDto inserir(UUID id, ClienteRequestDto request) throws Exception;
+	public ClienteResponseDto atualizar(UUID id, ClienteRequestDto request) throws Exception;
 	
 	public ClienteResponseDto excluir(UUID id) throws Exception;
 	

@@ -3,8 +3,6 @@ package com.example.demo.domain.models.dtos;
 import java.util.Date;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -26,7 +24,6 @@ public class ClienteRequestDto {
 	private String cpf;
 	
 	@NotNull(message = "A data de nascimento é obrigatória.")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
 	private Date dataNascimento;
 	
 	private List<EnderecoRequestDto> enderecos;
